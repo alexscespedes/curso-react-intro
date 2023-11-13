@@ -50,3 +50,19 @@ function useLocalStorage(itemName, initValue) {
 }
 
 export {useLocalStorage}
+
+  // console.log("Log 1")
+
+  // useEffect(() => {
+  //   console.log("Log with effect 2")
+  // })
+
+  // useEffect(() => {
+  //   console.log("Log with effect 2")
+  // }, [])
+
+  // useEffect(() => {
+  //   console.log("Log with effect 2")
+  // }, [totalToDos])
+
+  // console.log("Log 3")

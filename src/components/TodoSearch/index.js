@@ -1,10 +1,15 @@
 import { React } from 'react';
+import { useContext } from 'react';
+import { TodoContext } from '../../context';
 import './TodoSearch.css';
 
-function TodoSearch({
+function TodoSearch() {
+const {
     searchValue,
     setSearchValue
-}) {
+} = useContext(TodoContext)
+
+{
     return (
         <input 
         placeholder="Learn React JS"
@@ -14,6 +19,8 @@ function TodoSearch({
             setSearchValue(event.target.value)
         }} />
     );
+}
+
 }
 
 export { TodoSearch };
